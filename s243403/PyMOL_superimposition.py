@@ -1,3 +1,4 @@
+#Fetch two proteins of interest and superimpose them with colored loop regions
 fetch 5egg
 fetch 2cyx
 split_chains
@@ -8,6 +9,7 @@ remove solvent
 color gray90, 5egg_A
 color gray90, 2cyx_A
 
+#Define loop regions
 select Loop1_5egg, 5egg_A and resi 69-86
 select Loop1_2cyx, 2cyx_A and resi 73-90
 color palegreen, Loop1_2cyx or Loop1_5egg
@@ -20,6 +22,7 @@ select Loop3_5egg, 5egg_A and resi 91-98
 select Loop3_2cyx, 2cyx_A and resi 95-114
 color palegreen, Loop3_2cyx or Loop3_5egg
 
+#Prepare for image
 set_view (\
      0.260281026,   -0.772344351,   -0.579428494,\
      0.871456087,   -0.070466518,    0.485386789,\
