@@ -1,0 +1,35 @@
+#Blind Docking parameters
+
+Ligand SMILES: C=C2C(=O)OC3CC(C)C1C(OC(C)=O)CC(O)C1(C)C(OC(C)=O)C23
+Method: SwissDock with attracting cavities
+Target: 2cyx.pdb
+Sampling exhaustivity: 90
+Cavity prioritization: 70
+Random Initial Conditions: 8
+Box size: 47 47 47
+Box center: 1.0 23.0 30.0
+
+Röhrig UF, Goullieux M, Bugnon M, Zoete V. Attracting Cavities 2.0: improving the flexibility and robustness for small-molecule docking. J. Chem. Inf. Model., 2023, 63 (12), 3925–3940, DOI: 10.1021/acs.jcim.3c00054
+
+#Targeted Docking parameter
+
+Ligand SMILES: C=C2C(=O)OC3CC(C)C1C(OC(C)=O)CC(O)C1(C)C(OC(C)=O)C23
+Method: Autodock Vina
+Target: 2cyx.pdb
+Sampling exhaustivity: 36
+Box size: 20 20 20
+Box center: 4.0 25.0 36.0
+
+#Targeted Docking of molecular dynamics simulation models 1-10
+Ligand SMILES: C=C2C(=O)OC3CC(C)C1C(OC(C)=O)CC(O)C1(C)C(OC(C)=O)C23
+Method: Autodock Vina
+Target: model_0.pdb
+Sampling exhaustivity: 25
+Box size: 20 20 20
+Box center: 28.0 -11.0 -1.0
+
+Eberhardt J, Santos-Martins D, Tillack AF, Forli S. AutoDock Vina 1.2.0: New Docking Methods, Expanded Force Field, and Python Bindings. J. Chem. Inf. Model., 2021, 61 (8), 3891–3898, DOI: 10.1021/acs.jcim.1c00203
+
+
+
+
